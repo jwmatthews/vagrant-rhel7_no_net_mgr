@@ -7,5 +7,7 @@ end
 group :plugins do
   gemspec
   gem 'vagrant-rhel7_no_net_mgr', path: '.'
+  gem 'vagrant-libvirt'
+  gem 'vagrant-hostmanager'
 end
 

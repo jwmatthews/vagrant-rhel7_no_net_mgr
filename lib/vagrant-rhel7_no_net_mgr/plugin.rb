@@ -22,8 +22,7 @@ module VagrantPlugins
       guest_capability('redhat7_nonetmgr', 'configure_networks') do
         require Vagrant.source_root.join('plugins/guests/redhat/cap/configure_networks')
 
-        class ConfigureNetworks
-          extend ::VagrantPlugins::GuestRedHat::Cap::ConfigureNetworks
+        class ConfigureNetworks < ::VagrantPlugins::GuestRedHat::Cap::ConfigureNetworks
 
           def self.configure_networks(machine, networks)
             #
